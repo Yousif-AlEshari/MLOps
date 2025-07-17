@@ -17,7 +17,7 @@ if st.button("Predict"):
     }
     
     try:
-        response = requests.post("http://0.0.0.0:8000/predict", json=data)
+        response = requests.post("https://mlops-ziu0.onrender.com/predict", json=data)
         result = response.json().get("Prediction: ", ["Error"])
         st.success(f"Prediction: {result[0]}")
     except Exception as e:
