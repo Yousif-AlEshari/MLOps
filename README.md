@@ -12,5 +12,7 @@ This project trains a machine learning model and provides predictions via an API
 
 ## Usage
 #### CMD
+```
 uvicorn FastAPI_pkl.py --host 0.0.0.0 --port 8000
 streamlit run REST_API_UI.py
+```
